@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript Functionality</title>
+    <style>
+      #toggle-button {
+        padding: 0.5rem 1rem;
+        color: rgb(0, 34, 255);
+        background-color: rgb(172, 65, 67);
+        border-radius: 0.3rem;
+        outline: none;
+        border: 2px solid #f98686;
+        cursor: pointer;
+      }
+      /* Some basic styling */
+      #toggle-section {
+        display: none;
+        padding: 20px;
+        margin: 10px;
+        border: 1px solid #ccc;
+        border-radius: 0.5rem;
+        background-color: red;
+      }
+      /* Media Quer for website: */
+      @media (min-width: 768px) {
+        .container {
+          padding: 0 40px;
+        }
+      }
+
+      /* Media query for desktops */
+      @media (min-width: 1200px) {
+        .container {
+          padding: 0 60px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button id="toggle-button">Toggle Section</button>
+
+    <section id="toggle-section">
+      <h2>Toggleable Section</h2>
+      <p>This section can be toggled on and off.</p>
+    </section>
+
+    <script>
+      function test() {
+        console.log('Hello');
+        console.log('Seyha Vorn For Developer:');
+        const myString = `today I'll show you about my development skill for. my habit and Highly recommanded for junoi.
+        `;
+        console.log(myString);
+      }
+      test();
+      // JavaScript functionality
+      document
+        .getElementById('toggle-button')
+        .addEventListener('click', function () {
+          var section = document.getElementById('toggle-section');
+          if (section.style.display === 'none') {
+            section.style.display = 'block';
+          } else {
+            section.style.display = 'none';
+          }
+        });
+    </script>
+  </body>
+</html>
